@@ -1,7 +1,7 @@
 import google.generativeai as genai
 import os
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY",'AIzaSyA0EcRQOSONW4Fjkq4U79TgE3a0uVAO1GE')
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 class CallGemini:
     def __init__(self,model_name='gemini-2.0-flash'):
