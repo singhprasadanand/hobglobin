@@ -11,7 +11,7 @@ async def upload_pdf(file: UploadFile = File(...)):
 
     contents = await file.read()
 
-    with open(os.path.join(PDF_UPLOAD_DIR,file.filename), "wb") as f:
+    with open(os.path.join(os.getcwd(),PDF_UPLOAD_DIR,file.filename), "wb") as f:
         f.write(contents)
 
     """
