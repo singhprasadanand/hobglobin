@@ -14,6 +14,16 @@ This project processes **PDF bid documents** and lets you **query key informatio
 
 ---
 
+## 📌 Notes
+
+- 🔹 **Chunks are currently created based on the Table of Contents only**.
+- 🔹 Each chunk is sent to the **Gemini model** to extract a summary or "keyprint".
+- 🔹 These keyprints are saved in `keyprints.json`.
+- 🔹 Documents and vectors are indexed using **FAISS** for fast semantic search.
+
+---
+
+
 ## ▶️ How to Run the Project
 
 1. **Install dependencies**
