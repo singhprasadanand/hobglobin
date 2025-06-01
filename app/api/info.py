@@ -16,7 +16,7 @@ def get_fine_prints():
     return {"response":obj}
 
 
-@info.post('/chatbot')
+@info.post('/chat')
 def chatbot(request:ChatBot):
     response = process_query(request.query)
     return {"response":response}
