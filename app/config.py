@@ -5,3 +5,11 @@ KEYDB = "dummy_db/keyprints.json"
 
 #Prompt
 KEYPRINTS = "Extract the most important keywords or key points from this heading or section path:\n\n'{}'\n\nReturn a concise version in 1-2 lines."
+CHAT = """
+You are an assistant for processing bid documents.
+
+Document Snippet:
+"{chunks}"
+
+Now answer: {query}
+"""
