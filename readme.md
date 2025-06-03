@@ -32,7 +32,16 @@ This project processes **PDF bid documents** and lets you **query key informatio
 pip install -r requirements.txt
 
 ```
-2. **Run Uvicorn**
+
+2**Setup Gemini API key**
+
+```bash
+export GEMINI_API_KEY=your_key_here
+
+```
+
+
+3**Run Uvicorn**
 
 ```bash
 uvicorn app.main:app --reload
